@@ -40,8 +40,8 @@ Link do repositório: <https://github.com/DevBrenoSantos/FinalProject>
   </tr>
 </table>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/DevBrenoSantos/FinalProject?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/DevBrenoSantos/FinalProject?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/DevBrenoSantos/FinalProject?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/DevBrenoSantos/FinalProject?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/DevBrenoSantos/FinalProject?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/DevBrenoSantos/final-project?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/DevBrenoSantos/final-project?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/DevBrenoSantos/final-project?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/DevBrenoSantos/final-project?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/DevBrenoSantos/final-project?style=for-the-badge)
