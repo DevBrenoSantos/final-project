@@ -35,7 +35,7 @@ Este projeto tem como objetivo desenvolver um Sistema de Automatização para Pr
 
 - **Objetivo:**
   - Planejar, gerenciar e documentar o desenvolvimento do projeto, assegurando boas práticas de engenharia de software
-- **Conteúdos Aplicados:
+- **Conteúdos Aplicados:**
   - Planejamento e cronograma do projeto
   - Documentação e versionamento de código
   - Teste e validação do sistema
