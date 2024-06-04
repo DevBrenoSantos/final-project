@@ -1,5 +1,8 @@
 package com.backend.finalproject.cadastro;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class cadastrar {
     private String name, cnpj, email, password, phoneNumber;
     
@@ -51,5 +54,9 @@ public class cadastrar {
         this.phoneNumber = phoneNumber;
     }
 
-    
+    @Override
+    public String toString() {
+        return "cadastrar [name=" + name + ", cnpj=" + cnpj + ", email=" + email + ", password=" + password
+                + ", phoneNumber=" + phoneNumber + "]";
+    }
 }
