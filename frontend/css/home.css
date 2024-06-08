@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* navigate */
+nav{
+    background-color: var(--cor-verde);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 70px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: "League Spartan", sans-serif;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    margin-left: 10px;
+}
+.logo{
+    margin-right: auto;
+}
+.direita{
+    display: flex;
+    gap: 40px;
+}
+
+/* footer */
+footer{
+    background-color: var(--cor-verde);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    gap: px;
+    
+}
+.copyright{
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    margin-right: auto;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+img{
+    border-radius: 20px;
+}
+/* fim do footer */
+section{
+    background-image: url(../img/Fundo_home.png);
+    background-size:  cover; /* Aqui você define o zoom da imagem */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 85%;
+}
