@@ -8,8 +8,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Entity
+@Table("empresa")
 public class Empresa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

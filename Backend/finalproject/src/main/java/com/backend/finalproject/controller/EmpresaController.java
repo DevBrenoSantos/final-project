@@ -1,9 +1,9 @@
 package com.backend.finalproject.controller;
 
 import com.backend.finalproject.model.Empresa;
-import com.backend.finalproject.service.EmpresaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.backend.finalproject.repository.EmpresaRepository;
 
 import java.util.List;
 
@@ -11,20 +11,21 @@ import java.util.List;
 @RequestMapping("/api/empresa")
 public class EmpresaController {
     @Autowired
-    private EmpresaService empresaService;
+    private EmpresaRepository empresaRepository;
 
+    @Autowired
     @PostMapping
-    public Empresa save(@RequestBody Empresa empresa) {
-        return empresaService.save(empresa);
+    public Empresa findByNome(@RequestBody String nome) {
+        return empresaRepository.findByNome(nome);
     }
 
     @GetMapping
     public List<Empresa> findAll() {
-        return empresaService.findAll();
+        return empresaRepository.findAll();
     }
 
     @GetMapping("/{id}")
     public Empresa findById(@PathVariable Long id) {
-        return empresaService.findById(id);
+        return empresaRepository.findById(id).get();
     }
 }

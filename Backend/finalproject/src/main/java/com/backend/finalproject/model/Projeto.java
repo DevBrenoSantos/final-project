@@ -6,8 +6,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Entity
+@Table("projeto")
 public class Projeto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

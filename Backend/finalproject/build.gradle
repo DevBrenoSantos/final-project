@@ -8,7 +8,7 @@ group = 'com.backend'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '22'
+	sourceCompatibility = '17'
 }
 
 configurations {
@@ -22,10 +22,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
-    implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
-    implementation 'jakarta.validation:jakarta.validation-api:3.0.0'
-    implementation 'jakarta.transaction:jakarta.transaction-api:2.0.0'
+	implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+	implementation 'org.hibernate.orm:hibernate-community-dialects:6.5.2.Final'
+	implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
+	implementation 'jakarta.validation:jakarta.validation-api:3.0.0'
+	implementation 'jakarta.transaction:jakarta.transaction-api:2.0.0'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
