@@ -1,8 +1,9 @@
 package com.backend.finalproject.repository;
 
-import com.backend.finalproject.model.Projeto;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface ProjetoRepository extends JpaRepository<Projeto, Long>{
-	
+import com.backend.finalproject.model.Projeto;
+
+public interface ProjetoRepository extends CrudRepository<Projeto, Long>{
+
 }
