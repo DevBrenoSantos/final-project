@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus projetos</title>
+    <title>Novo pedido</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
     <!-- estilos de fonte -->
@@ -13,11 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/meusProjetos.css">
-
+    <link rel="stylesheet" href="../css/novoPedido.css">
 </head>
 <body>
-     <nav>
+    <nav>
         <div class="logo">
             <a href="home.html" >Techlaw Company</a>
         </div>
@@ -26,23 +25,17 @@
         </div>   
     </nav>
     <section>
-        <h1>Meus Projetos</h1>
-            <div class="container">
-                <div class="caixa" href="#">
-                    <p>Gerador de petições</p> 
-                    <button class="btn_ver">Gerar</button>
-                </div>
-                <div class="caixa" href="#">
-                    <p>Processos Pendentes</p>
-                    <button class="btn_ver">Ver</button>
-                </div>
-                <div class="caixa" href="#">
-                    <p>Processos sob segredo</p>
-                    <button class="btn_ver">Ver</button>
-                </div>
-                
+        <h1>Novo pedido</h1>
+        <form action="" class="form">
+            <label for="nome">Nome do projeto</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite aqui..." required>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Digite aqui..." required></textarea>
+            <label for="data">Data de entrega</label>
+            <input type="date" id="data" name="data" required>
+             <button type="submit" class="btn_enviar">Enviar</button>
+        </form>
     </section>
-       
     
 </body>
 </html>

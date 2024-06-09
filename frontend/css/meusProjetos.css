@@ -1,0 +1,59 @@
+section {
+    background-image: url(../img/Fundo_meusProjetos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* previne overflow horizontal */
+    gap: 40px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 20px;
+}
+.caixa {
+    flex: 1 1 250px; /* Flex-grow, flex-shrink, and initial flex-basis */
+    max-width: calc(33.333% - 40px); /* 3 boxes per row with gaps */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: var(--cor-branca);
+    border-radius: 20px;
+    box-shadow: -12px 15px 9.8px -4px #112721;
+    gap: 25px;
+}
+.btn_ver {
+    width: 158px;
+    height: 46px;
+    border-radius: 12px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #589182;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+}
+.btn_ver:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #3E6F5C;
+}

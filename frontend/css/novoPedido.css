@@ -1,0 +1,60 @@
+section {
+    background-image: url(../img/Fundo_home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* previne overflow horizontal */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    color: var(--cor-branca);
+    font-family: var(--fonte_titulo);
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove bordas padrões */
+    border-bottom: 2px solid white; /* Adiciona uma borda inferior branca */
+    background-color: transparent; /* Fundo transparente */
+    color: var(--cor-branca); /* Cor do texto */
+    padding: 10px 0; /* Espaçamento vertical */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 100%; /* Largura total do container */
+    outline: none; /* Remove o contorno ao focar */
+
+}
+#descricao{
+    border-radius: 20px;
+    border: none;
+}
+.btn_enviar{
+    width: 100px;
+    height: 40px;
+    font-family: var(--fonte_titulo);
+    color: var(--cor-branca);
+    background-color: var(--cor-verde);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.btn_enviar:hover{
+    background-color: #3E6F5C;
+
+}
