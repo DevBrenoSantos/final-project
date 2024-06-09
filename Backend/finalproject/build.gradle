@@ -22,8 +22,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
-	implementation 'org.hibernate.orm:hibernate-community-dialects:6.5.2.Final'
+  implementation 'org.postgresql:postgresql'
 	implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
 	implementation 'jakarta.validation:jakarta.validation-api:3.0.0'
 	implementation 'jakarta.transaction:jakarta.transaction-api:2.0.0'
