@@ -5,3 +5,9 @@
     --cor-verde-claro: #058C42;
     --fonte_titulo:  Poppins;
 }
+h1{
+    font-family: var(--fonte_titulo);
+    color: var(--cor-branca);
+    font-size: 64px;
+    
+}
