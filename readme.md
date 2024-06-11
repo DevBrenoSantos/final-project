@@ -30,6 +30,7 @@ Este projeto tem como objetivo desenvolver um Sistema de Automatização para Pr
   - Modelagem de dados - (Conceitual e lógico)
   - Implementação de banco de dados relacional usando PostgreSQL
 
+[Diagramas - Conceitual e Lógico](./docs/diagramas-db/)
 
 ### 🔸 Projeto Interdisciplinar I
 
@@ -40,9 +41,48 @@ Este projeto tem como objetivo desenvolver um Sistema de Automatização para Pr
   - Documentação e versionamento de código
   - Teste e validação do sistema
 
+🔗 Link do vídeo: [Banco de Dados](https://teste.com)
+🔗 Link do vídeo: [Desenvolvimento Web Backend](https://teste.com)
 🔗 Link do repositório: <https://github.com/DevBrenoSantos/FinalProject>
 
-### Contribuidores do Projeto:
+---
+
+### Tecnologias Usadas
+
+### Bun:
+
+Bun é um software de código aberto, composto por um runtime que permite a execução de códigos JavaScript fora de um navegador web, um gerenciador de pacotes, um empacotadom, e de uma ferramenta para execução de teste de software.
+- **TypeScript:**
+  
+  TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.
+- **HTML, CSS e JavaScript:**
+  HTML, CSS e JavaScript são as tecnologias fundamentais que formam a base da web, cada uma desempenhando um papel único no desenvolvimento de áginas e aplicativos web. Escolhemos usá-lás pois juntas, elas permitem criar experiências de usuário ricas e interativas.
+- **PostgreSQL:**
+  O PostgreSQL é um sistema gerenciador de banco de dados relacional, desenvolvido como um projeto de código aberto.
+- **ElephantSQL:**
+  Serviço de hospedagem em nuvem para bancos de dados, especificamente para PostgreSQL.
+
+### Funcionalidades da Aplicação
+
+- Cadastrar nova empresa vinculada à plataforma.
+- Cadastrar novos projetos a serem desenvolvidos.
+- Login/Logoff
+- Listar projetos em desenvolvimento e atualizar status
+
+### Arquitetura Desenvolvida
+
+**Arquitetura Monolítica**
+
+Um aplicação monolítica descreve uma única aolicação de software em camadas no qual a interface de usuário e código de acesso aos dados são combinados em um único programa a partir de uma única plataforma.
+
+Esquema simples de arquitetura monolítica:
+
+```mermaid
+graph LR;
+  IU1(Interface do Usuário) --> Camada-de-Processamento((Camada de Processamento)) --> ID1(Interface de Dados) --> db1[(Banco de Dados)];
+```
+
+### Contribuidores do Projeto
 
 <table>
   <tr>
