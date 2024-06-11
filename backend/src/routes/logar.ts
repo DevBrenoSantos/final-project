@@ -1,11 +1,13 @@
 import empresaDao from "../dao/empresaDao";
-import sessaoState from "../controller/sessaoController";
+import sessaoController from "../controller/sessaoController";
 import log from "../utils/log";
 
 const logar = async (req: Request) => {
-  log("Logar");
   const {email, senha} = await req.json();
-  const empresa = await empresaDao.getByEmail(email);
+
+  log(`[Http - /logar]: ${email}`);
+
+  const empresa = empresaDao.getByEmail(email);
 
   if (!empresa) {
     return new Response("Usuário ou senha inválidos", { status: 401 });
@@ -17,7 +19,11 @@ const logar = async (req: Request) => {
     return new Response("Usuário ou senha inválidos", { status: 401 });
   }
 
-  const sessao = sessaoState.logar(empresa);
+  const sessao = await sessaoController.logar(email, senha);
+
+  if (!sessao) {
+    return new Response("Usuário ou senha inválidos", { status: 401 });
+  }
 
   return new Response(JSON.stringify(sessao), { status: 200 });
 }

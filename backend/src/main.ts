@@ -1,12 +1,13 @@
 import router from "./routes/router";
 import log from "./utils/log";
 
-log("Server started");
+log("[Http]: Iniciando servidor");
 
 Bun.serve({
   port: 8080,
   async fetch(req) {
-    log("Request received");
     return router(req);
   }
 });
+
+log("[Http]: Servidor iniciado");

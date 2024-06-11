@@ -1,6 +1,6 @@
 import type Empresa from "../models/empresa";
-import type Dao from "../types/dao";
 import db from "../database/connection";
+import log from "../utils/log";
 
 
 
@@ -11,10 +11,17 @@ const empresaDao = {
   getAll: () => {
     return db.query<Empresa, []>("SELECT * FROM empresa").all();
   },
-  insert: (empresa: Empresa) => {
-    db.query<Empresa, [string, string, string, string]>(
-      "INSERT INTO empresa (nome, cnpj, email, senha) VALUES (?1, ?2, ?3, ?4)"
-    ).run(empresa.nome, empresa.cnpj, empresa.email, empresa.senha);
+  insert: (empresa: Empresa): boolean => {
+    try {
+      db.query<Empresa, [string, string, string, string]>(
+        "INSERT INTO empresa (nome, cnpj, email, senha) VALUES (?1, ?2, ?3, ?4)"
+      ).run(empresa.nome, empresa.cnpj, empresa.email, empresa.senha);
+    } catch (e) {
+      log("[Database]: Erro ao inserir empresa - " + e);
+      return false;
+    }
+    log("[Database]: Empresa inserida com sucesso");
+    return true;
   },
   update: (empresa: Empresa) => {
     db.query<Empresa, [string, string, string, string, number]>(
@@ -32,11 +39,12 @@ const empresaDao = {
   },
   getByEmailSenha: (email: string, senha: string) => {
     return db.query<Empresa, [string, string]>("SELECT * FROM empresa WHERE email = ?1 AND senha = ?2").get(email, senha);
+  },
+  cadastrar: (nome: string, cnpj: string, email: string, senha: string) => {
+    db.query<Empresa, [string, string, string, string]>(
+      "INSERT INTO empresa (nome, cnpj, email, senha) VALUES (?1, ?2, ?3, ?4)"
+    ).run(nome, cnpj, email, senha);
   }
-}
-
-const getByEmail = (email: string) => {
-  return db.query<Empresa, [string]>("SELECT * FROM empresa WHERE email = ?1").get(email);
 }
 
 export default empresaDao;
