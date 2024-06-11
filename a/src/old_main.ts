@@ -2,8 +2,6 @@ import { Database } from "bun:sqlite";
 
 const db = new Database("finalproject.sqlite");
 
-console.log("server online")
-
 Bun.serve({
   port: 8080,
   async fetch(req) {
@@ -88,31 +86,7 @@ const sessaoState: SessaoState = {
   logados: new Map(),
 
 }
-
-interface SessaoState {
-  logados: Map<string, number>;
-}
-
 // gera um token aleatório alphanumeric de 20 caracteres
 function gerarToken() {
   return Math.random().toString(36).substring(2, 22);
-}
-
-interface Sessao {
-  id: number;
-  email: string;
-}
-
-interface Empresa {
-  id: number;
-  nome: string;
-  email: string;
-  senha: string;
-}
-
-interface Projeto {
-  id: number;
-  nome: string;
-  descricao: string;
-  id_empresa: number;
 }
