@@ -41,9 +41,10 @@ Este projeto tem como objetivo desenvolver um Sistema de Automatização para Pr
   - Documentação e versionamento de código
   - Teste e validação do sistema
 
-🔗 Link do vídeo: [Banco de Dados](https://teste.com)
-🔗 Link do vídeo: [Desenvolvimento Web Backend](https://teste.com)
-🔗 Link do repositório: <https://github.com/DevBrenoSantos/FinalProject>
+> [!IMPORTANT]
+> 🔗 Link do vídeo: [Banco de Dados](https://teste.com)
+> 🔗 Link do vídeo: [Desenvolvimento Web Backend](https://teste.com)
+> 🔗 Link do repositório: <https://github.com/DevBrenoSantos/FinalProject>
 
 ---
 
