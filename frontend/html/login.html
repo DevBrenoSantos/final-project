@@ -10,28 +10,26 @@
 
 <body>
     <section>
-        <form action="" id="login-form">
+        <form id="login-form">
             <h1>Faça seu Login</h1>
             <div class="inputbox">
                 <icon-icon name="mail-outline"></icon-icon>
-                <input id="email"type="text" >
-                <label for="">Login</label>
+                <input id="email" type="text" required>
+                <label for="email">Login</label>
             </div>
             <div class="inputbox">
                 <icon-icon name="lock-closed-outline"></icon-icon>
-                <input id="password"type="password" required>
-                <label for="">Senha</label>
+                <input id="password" type="password" required>
+                <label for="password">Senha</label>
             </div>
             <div class="forget">
-                <label for=""><input type="checkbox">Me lembre</label>
+                <label for="remember"><input id="remember" type="checkbox">Me lembre</label>
             </div>
-            <button id="login">Entrar</button>
+            <button type="button" id="login">Entrar</button>
             <div class="registrer">
                 <p>Não possui uma conta?</p> <a href="criarConta.html">Criar conta</a>
             </div>
-
         </form>
-
     </section>
     <script src="../js/login.js"></script>
 </body>
